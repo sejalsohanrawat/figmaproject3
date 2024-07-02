@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.leftside {
+  background: url(Rectanglel.png);
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+}
+.left_nav {
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin: 30px;
+    li:nth-child(1) {
+      color: #7c5ac7;
+
+      text-align: center;
+      font-family: Lexend;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    li {
+      color: #2f3130;
+
+      text-align: center;
+      font-family: Lexend;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+.navbarcontainer {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 80px;
+}
+.leftcontainer {
+  margin-left: 75px;
+  margin-top: 58px;
+}
+
+.logo {
+  img {
+    width: 90px;
+    height: 54px;
+  }
+}
+
+.line {
+  height: 8px;
+  width: 30px;
+  background-color: rgb(197, 82, 182);
+}
+.welcomebox {
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #e93fab;
+  font-size: 24px;
+  gap: 10px;
+}
+.welcometo {
+  color: #9e2349;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.name {
+  font-family: "DM Serif Display", serif;
+  font-weight: 150;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  span {
+    color: #e93fab;
+  }
+  h1 {
+    width: 400px;
+    font-size: 50px;
+  }
+  p {
+    color: #2f3130;
+
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+    width: 548px;
+  }
+}
+.buttondiv {
+  button {
+    width: 271px;
+    display: inline-flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    border-radius: 20px;
+    background: #7d59c3;
+
+    box-shadow: 10px 10px 30px 0px rgba(125, 89, 195, 0.2);
+  }
+}
+.rightside {
+  width: 595px;
+  height: 747px;
+
+  flex-shrink: 0;
+  background: url(Rectangler.png) lightgray 50% / cover no-repeat;
+}
+.right_nav {
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: 30px;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.contactus {
+  border-radius: 50px;
+  height: 50px;
+  width: 160px;
+
+  button {
+    width: 148px;
+    display: flex;
+    height: 50px;
+    background: transparent;
+    color: #e5e0f0;
+    border-radius: 25px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.login {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  height: 50px;
+  width: 115px;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+
+  button {
+    padding: 20px 40px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+    flex-shrink: 0;
+    background-color: #2e302f;
+    color: #ffffff;
+    border: 60px transparent;
+    background-color: transparent;
+    color: #5211df;
+
+    border: 0;
+  }
+}
+
+.stats {
+  margin-top: 60px;
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 30px;
+  width: 360px;
+}
+.stats1 {
+  border: none;
+  width: 190px;
+}
+.stats1n {
+  color: #7c5ac7;
+
+  font-family: Lexend;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.stats1h {
+  width: 190px;
+
+  color: #2f3130;
+
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.stats2 {
+  border: none;
+  height: 80px;
+  width: 150px;
+  .stats2n {
+    color: #7c5ac7;
+    font-family: Lexend;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .stats2h {
+    width: 190px;
+    color: #2f3130;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+.stats3 {
+  border: none;
+  height: 80px;
+  width: 150px;
+  .stats3n {
+    color: #7c5ac7;
+
+    font-family: Lexend;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .stats3h {
+    width: 190px;
+    color: #2f3130;
+
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+.bottompart {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 83px 80px;
+}
+.line2 {
+  display: flex;
+  height: 6px;
+  width: 36px;
+  background-color: #e93fab;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.aboutus {
+  margin-left: -59px;
+  h1 {
+    gap: 2px;
+    color: #e93fab;
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    font-size: 20px;
+  }
+}
+.lillypad {
+  padding-top: 20px;
+  font-size: 18px;
+  h1 {
+    color: #2f3130;
+
+    font-family: "DM Serif Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 380px;
+  }
+}
+
+.investorheading {
+  height: 29px;
+  width: 1054px;
+}
+.investorlogoheading {
+}
+.investorinfo {
+}
+.logobox {
+  display: flex;
+}
+.bottompart {
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    flex: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
+  }
+}
+.bottom1 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bottom2 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+.bottom3 {
+  display: flex;
+  padding: 30px;
+
+  flex-direction: column;
+}
+.bottom4 {
+  padding: 30px;
+  display: flex;
+  border-right: 1px solid black;
+
+  flex-direction: column;
+}
+.bottom5 {
+  padding: 30px;
+  display: flex;
+  border-right: 1px solid black;
+
+  flex-direction: column;
+}
+.bottom6 {
+  padding: 30px;
+  border-top: 1px solid black;
+}
+.decisionheading {
+  padding-left: 20px;
+  height: 29px;
+  width: 202px;
+}
+.decisionlogoheading {
+  padding-left: 20px;
+  height: 29px;
+  width: 202px;
+}
+
+.logobox2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+.investerlogo {
+  img {
+    width: 90px;
+  }
+}
+
+.blackbottom {
+  background-color: #202221;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+h2 {
+  color: #e5e0f0;
+}
+.searchbar {
+  width: 440px;
+  display: flex;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  opacity: 0.3;
+  background: #202221;
+  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.15);
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+}
+input {
+  height: 55px;
+  width: 440px;
+  display: flex;
+  /* padding: 20px; */
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+button {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  width: 185px;
+  height: 45px;
+  flex-shrink: 0;
+  background-color: #2e302f;
+  color: #ffffff;
+  border: 60px transparent;
+}
+.signup {
+  margin-top: 20px;
+  button {
+    color: #fff;
+
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.056px;
+    border-radius: 20px;
+    background: #7c5ac7;
+
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+}
+.icons {
+  margin-top: 39px;
+  display: flex;
+  gap: 15px;
+
+  width: 16px;
+
+  img {
+    padding: 25px;
+    background: aliceblue;
+    border-radius: 50px;
+  }
+}
+.network {
+  h4 {
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+  }
+  h6 {
+    color: rgb(245, 248, 247);
+  }
+  p {
+    margin-top: 8px;
+    color: #fff;
+    opacity: 0.6;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+  }
+}
+
+.right {
+  color: white;
+}
+.right2 {
+  color: white;
+}
+.signupinfo {
+  width: 440px;
+  margin-top: 50px;
+  width: 440px;
+}
+
+.leftblackbottom {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.rightblackbottom {
+  width: 50%;
+}
+.addresscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.addressbox {
+  width: 180px;
+}
+.rightwrapper {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.network {
+  width: 100px;
+
+  padding: 2px;
+}
+.technology {
+  margin-top: 53px;
+  color: #fff;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+  p {
+    margin-top: 8px;
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.Highlights {
+  color: #fff;
+  margin-top: 53px;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+  p {
+    margin-top: 8px;
+    width: 200px;
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.products {
+  color: #fff;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+  p {
+    margin-top: 8px;
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.Knowledge {
+  color: #fff;
+  margin-top: 97px;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+  p {
+    margin-top: 8px;
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.Ourstory {
+  color: #fff;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+  p {
+    margin-top: 8px;
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.address {
+  p {
+    color: #fff;
+
+    font-family: Urbanist;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.096px;
+    opacity: 0.6;
+  }
+}
+.lastlogo {
+  margin-bottom: 20px;
+  margin-right: 100px;
+
+  width: 119.129px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.blackbottom {
+  padding: 64px 75px;
+  padding-top: 50px;
+}
+.addresshead {
+  color: #fff;
+
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.096px;
+}
+.blackbottom {
+  padding: 80px 75px;
+}
